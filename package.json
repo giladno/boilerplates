@@ -1,0 +1,26 @@
+{
+    "name": "node",
+    "version": "1.0.0",
+    "description": "Boilerplate for nodejs",
+    "main": "index.js",
+    "scripts": {},
+    "engines": {
+        "node": ">=8"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/giladno/boilerplates.git"
+    },
+    "keywords": [],
+    "author": "Gilad Novik <gilad@novik.ca>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/giladno/boilerplates/issues"
+    },
+    "homepage": "https://github.com/giladno/boilerplates#readme",
+    "devDependencies": {
+        "babel-eslint": "^10.0.1",
+        "eslint": "^5.9.0",
+        "eslint-plugin-node": "^8.0.0"
+    }
+}
