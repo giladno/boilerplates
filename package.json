@@ -1,0 +1,96 @@
+{
+    "name": "react-boilerplate",
+    "version": "1.0.0",
+    "description": "Simple react boilerplate",
+    "scripts": {
+        "start": "$(npm bin)/webpack-dev-server",
+        "clean": "rm -rf ./dist",
+        "prebuild": "npm run clean",
+        "build": "NODE_ENV=production $(npm bin)/webpack --colors"
+    },
+    "keywords": [],
+    "author": "Gilad Novik <gilad@novik.ca>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/giladno/react-boilerplate.git"
+    },
+    "bugs": {
+        "url": "https://github.com/giladno/react-boilerplate/issues"
+    },
+    "homepage": "https://github.com/giladno/react-boilerplate#readme",
+    "dependencies": {
+        "lodash": "^4.17.11",
+        "normalize.css": "^8.0.1",
+        "react": "^16.6.3",
+        "react-dom": "^16.6.3",
+        "react-router-dom": "^4.3.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.2.0",
+        "@babel/plugin-proposal-class-properties": "^7.2.1",
+        "@babel/plugin-proposal-decorators": "^7.2.0",
+        "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+        "@babel/polyfill": "^7.0.0",
+        "@babel/preset-env": "^7.2.0",
+        "@babel/preset-react": "^7.0.0",
+        "babel-eslint": "^10.0.1",
+        "babel-loader": "^8.0.4",
+        "babel-plugin-lodash": "^3.3.4",
+        "css-loader": "^1.0.1",
+        "dotenv-webpack": "^1.5.7",
+        "eslint": "^5.9.0",
+        "eslint-loader": "^2.1.1",
+        "eslint-plugin-node": "^8.0.0",
+        "eslint-plugin-react": "^7.11.1",
+        "file-loader": "^2.0.0",
+        "html-webpack-plugin": "^3.2.0",
+        "html-webpack-template": "^6.2.0",
+        "less": "^3.9.0",
+        "less-loader": "^4.1.0",
+        "mini-css-extract-plugin": "^0.4.5",
+        "node-sass": "^4.10.0",
+        "sass-loader": "^7.1.0",
+        "styled-jsx": "^3.1.2",
+        "uglifyjs-webpack-plugin": "^2.0.1",
+        "webpack": "^4.27.0",
+        "webpack-cli": "^3.1.2",
+        "webpack-dev-server": "^3.1.10"
+    },
+    "babel": {
+        "presets": [
+            [
+                "@babel/preset-env",
+                {
+                    "modules": false,
+                    "targets": {
+                        "chrome": "60"
+                    }
+                }
+            ],
+            "@babel/preset-react"
+        ],
+        "plugins": [
+            "lodash",
+            "styled-jsx/babel",
+            [
+                "@babel/plugin-proposal-decorators",
+                {
+                    "legacy": true
+                }
+            ],
+            [
+                "@babel/plugin-proposal-class-properties",
+                {
+                    "loose": true
+                }
+            ],
+            [
+                "@babel/plugin-proposal-object-rest-spread",
+                {
+                    "loose": true
+                }
+            ]
+        ]
+    }
+}
